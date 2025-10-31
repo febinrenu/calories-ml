@@ -126,12 +126,12 @@ def train_random_forest(X_train, X_test, y_train, y_test):
     print("Training Random Forest with GridSearchCV...")
     print("="*60)
     
-    # Define parameter grid
+    # Define parameter grid (reduced for smaller model size)
     param_grid = {
-        'n_estimators': [50, 100, 200],
-        'max_depth': [10, 20, None],
-        'min_samples_split': [2, 5],
-        'min_samples_leaf': [1, 2]
+        'n_estimators': [30, 50, 80],  # Reduced from [50, 100, 200]
+        'max_depth': [10, 15, 20],  # Limited depth to reduce size
+        'min_samples_split': [5, 10],  # Increased to reduce complexity
+        'min_samples_leaf': [2, 4]  # Increased to reduce complexity
     }
     
     # Create base model

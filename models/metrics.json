@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-10-31 13:03:57",
+    "timestamp": "2025-10-31 14:10:40",
     "feature_names": [
         "Gender",
         "Age",
@@ -19,17 +19,17 @@
         },
         "random_forest": {
             "model_name": "Random Forest (Best)",
-            "r2_score": 0.9982755248863191,
-            "mse": 6.959621966666667,
-            "rmse": 2.6381095440990823,
-            "mae": 1.6838066666666667,
+            "r2_score": 0.9980630163700014,
+            "mse": 7.817262025682442,
+            "rmse": 2.7959366991551224,
+            "mae": 1.7856441693336478,
             "best_params": {
-                "max_depth": null,
-                "min_samples_leaf": 1,
-                "min_samples_split": 2,
-                "n_estimators": 200
+                "max_depth": 15,
+                "min_samples_leaf": 2,
+                "min_samples_split": 5,
+                "n_estimators": 80
             },
-            "best_cv_score": 0.997268120019538
+            "best_cv_score": 0.9969855533728732
         }
     },
     "best_model": "random_forest"
