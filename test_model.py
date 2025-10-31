@@ -208,7 +208,7 @@ class TestResponseFormat:
         assert response.status_code == 200
         
         data = response.json()
-        required_fields = ["calories_burned", "model_used", "input_data", "model_confidence"]
+        required_fields = ["calories_burned", "model_used", "input_data", "confidence_score"]
         
         for field in required_fields:
             assert field in data
@@ -227,7 +227,7 @@ class TestResponseFormat:
         response = client.post("/predict", json=SAMPLE_EXERCISE_DATA)
         data = response.json()
         
-        confidence = data["model_confidence"]
+        confidence = data["confidence_score"]
         assert 0 <= confidence <= 1
 
 
