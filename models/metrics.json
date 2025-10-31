@@ -1,5 +1,5 @@
 {
-    "timestamp": "2025-10-31 14:10:40",
+    "timestamp": "2025-10-31 14:14:09",
     "feature_names": [
         "Gender",
         "Age",
@@ -20,9 +20,9 @@
         "random_forest": {
             "model_name": "Random Forest (Best)",
             "r2_score": 0.9980630163700014,
-            "mse": 7.817262025682442,
+            "mse": 7.817262025682441,
             "rmse": 2.7959366991551224,
-            "mae": 1.7856441693336478,
+            "mae": 1.7856441693336473,
             "best_params": {
                 "max_depth": 15,
                 "min_samples_leaf": 2,
